@@ -10,7 +10,7 @@ const ProductView = () => {
     const dispatch=useDispatch();
     useEffect(()=>{
 dispatch(fetchProducts())
-    },[])
+    },[dispatch])
   return (
     <div>
       <h2>List of Product titles</h2>
